@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#2e241a"/>
+      <stop offset="0.55" stop-color="#1e1811"/>
+      <stop offset="1" stop-color="#130f0a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.46" r="0.55">
+      <stop offset="0" stop-color="#f0c489" stop-opacity="0.40"/>
+      <stop offset="0.55" stop-color="#c89b6d" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#c89b6d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nib" x1="0.15" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#f6dcae"/>
+      <stop offset="0.45" stop-color="#dcae79"/>
+      <stop offset="1" stop-color="#a9764a"/>
+    </linearGradient>
+    <linearGradient id="nibShade" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eac68f" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#eac68f" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" rx="228" ry="228" fill="url(#bg)"/>
+  <rect width="1024" height="1024" rx="228" ry="228" fill="url(#glow)"/>
+  <rect x="10" y="10" width="1004" height="1004" rx="220" ry="220" fill="none" stroke="url(#rim)" stroke-width="10"/>
+
+  <g transform="translate(512,514) scale(6.3) translate(-50,-50)">
+    <!-- nib body: rounded shoulders, tapering to a sharp writing point -->
+    <path id="nibbody" d="M50 5
+      C 63 5 74 13 78 29
+      C 82 45 74 61 62 75
+      C 57 81 53 88 50 95
+      C 47 88 43 81 38 75
+      C 26 61 18 45 22 29
+      C 26 13 37 5 50 5 Z" fill="url(#nib)"/>
+    <path d="M50 5
+      C 63 5 74 13 78 29
+      C 82 45 74 61 62 75
+      C 57 81 53 88 50 95
+      C 47 88 43 81 38 75
+      C 26 61 18 45 22 29
+      C 26 13 37 5 50 5 Z" fill="url(#nibShade)"/>
+    <!-- left highlight for metallic feel -->
+    <path d="M50 11 C40 12 32 20 29 33 C26 46 34 60 44 72 C46 75 48 79 50 84 Z" fill="#ffffff" opacity="0.16"/>
+    <!-- breather hole -->
+    <circle cx="50" cy="40" r="4.8" fill="#1c1610"/>
+    <circle cx="50" cy="40" r="4.8" fill="none" stroke="#f6dcae" stroke-opacity="0.4" stroke-width="0.9"/>
+    <!-- slit from hole to tip -->
+    <path d="M48.9 42 L51.1 42 L50.5 93 L49.5 93 Z" fill="#1c1610"/>
+  </g>
+</svg>
